@@ -37,7 +37,7 @@ function onCardClick(event) {
         {
             onShow: instance => {
                 document.addEventListener('keydown', modalClose);
-            }
+            };
             onClose: instance => {
                 document.removeEventListener('keydown', modalClose);
             },
@@ -51,5 +51,6 @@ function onCardClick(event) {
         if (event.code === 'Escape') {
             instance.close();
         };
-    }
-}
+    };
+};
+    
