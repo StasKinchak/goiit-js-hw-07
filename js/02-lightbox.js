@@ -13,6 +13,7 @@ const markup = galleryItems
 class="gallery_image" 
 src="${preview}"
 alt="${description}"
+title="${description}"
 />
 </a>
 </li>`

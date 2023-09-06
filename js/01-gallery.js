@@ -6,12 +6,13 @@ const galleryContainer = document.querySelector('.gallery');
 const markup = galleryItems
     .map(
     ({preview, original, description}) =>
-`<li class="gallery_item">
-<a class="gallery_ link" href="${original}">
+`<li class="gallery__item">
+<a class="gallery__link" href="${original}">
 <img
-class="gallery_image" 
+class="gallery__image" 
 src="${preview}"
 alt="${description}"
+title="${description}"
 />
 </a>
 </li>`
@@ -37,7 +38,7 @@ function onCardClick(event) {
         {
             onShow: instance => {
                 document.addEventListener('keydown', modalClose);
-            };
+            },
             onClose: instance => {
                 document.removeEventListener('keydown', modalClose);
             },
