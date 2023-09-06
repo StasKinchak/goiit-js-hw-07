@@ -38,7 +38,7 @@ function onCardClick(event) {
             onShow: instance => {
                 document.addEventListener('keydown', modalClose);
             }
-            onclose: instance => {
+            onClose: instance => {
                 document.removeEventListener('keydown', modalClose);
             },
         }
