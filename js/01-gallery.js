@@ -13,6 +13,7 @@ class="gallery__image"
 src="${preview}"
 alt="${description}"
 title="${description}"
+data-source="${original}"
 />
 </a>
 </li>`
